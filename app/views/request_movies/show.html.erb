@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Movie name:</strong>
+  <%= @request_movie.movie_name %>
+</p>
+
+<p>
+  <strong>Actor name:</strong>
+  <%= @request_movie.actor_name %>
+</p>
+
+<p>
+  <strong>Today date:</strong>
+  <%= @request_movie.today_date %>
+</p>
+
+<p>
+  <strong>Language:</strong>
+  <%= @request_movie.language %>
+</p>
+
+<%= link_to 'Edit', edit_request_movie_path(@request_movie) %> |
+<%= link_to 'Back', request_movies_path %>
